@@ -1,0 +1,33 @@
+<section class="heading">
+    <h2>Add New Task</h2>
+</section>
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for=" title">Title</label>
+        <input type="text" id="title" formControlName="title" class="form-control" />
+        <div *ngIf="title?.invalid && (title?.dirty || title?.touched)" class="error">
+            <div *ngIf="title?.errors?.['required']">Title is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="status">Status</label>
+        <select id="status" formControlName="status" class="form-control">
+            <option value="{{taskStatuses.PENDING}}">Pending</option>
+            <option value="{{taskStatuses.IN_PROGRESS}}">In Progress</option>
+            <option value="{{taskStatuses.COMPLETED}}">Completed</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" formControlName="dueDate" class="form-control" />
+        <div *ngIf="dueDate?.invalid && (dueDate?.dirty || dueDate?.touched)" class="error">
+            <span *ngIf="dueDate?.errors?.['required']">Due Date is required.</span>
+            <span *ngIf="dueDate?.hasError('pastDate')">Date cannot be in the past!.</span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="taskForm.invalid">Submit</button>
+</form>
