@@ -1,0 +1,38 @@
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  &.pending-summary {
+    background: #ffcc00;
+  }
+
+  &.in-progress-summary {
+    background: #00ccff;
+  }
+
+  &.completed-summary {
+    background: #00cc66;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .summary {
+    flex-direction: column;
+    align-items: center;
+  }
+  .summary-item {
+    margin-top: 10px;
+  }
+}

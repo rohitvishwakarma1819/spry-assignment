@@ -1,0 +1,30 @@
+<div class="container">
+    <section class="task-list-header">
+        <div>
+            <label class="status-label" for="status">Status</label>
+            <select (change)="changeFilter($event)">
+                <option value="All">All</option>
+                <option value="{{taskStatuses.PENDING}}">Pending</option>
+                <option value="{{taskStatuses.IN_PROGRESS}}">In Progress</option>
+                <option value="{{taskStatuses.COMPLETED}}">Completed</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="sort-label" for="sort">Sort by Due Date:</label>
+            <select id="sort" (change)="setSortOrder($event)">
+                <option value="asc">Oldest First</option>
+                <option value="desc">Newest First</option>
+            </select>
+        </div>
+
+        <button class="add-task-button" (click)="openTaskForm()">+ Add task</button>
+    </section>
+
+    <div class="task-grid">
+        <ng-container *ngIf="filteredTasks$ | async as tasks">
+            <app-task-card *ngFor="let task of tasks" [task]="task" (delete)="deleteTask(task.id)"
+                (edit)="editTask(task)"></app-task-card>
+        </ng-container>
+    </div>
+</div>
