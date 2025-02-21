@@ -7,7 +7,7 @@
     <p class="task-description">{{task.description}}</p>
     <p class="task-due-date">Due: {{task.dueDate}}</p>
 
-    <div class="task-actions">
+    <div *ngIf="showActions" class="task-actions">
         <button class="edit-btn" (click)="editTask()">Edit</button>
         <button class="delete-btn" (click)="deleteTask()">Delete</button>
     </div>

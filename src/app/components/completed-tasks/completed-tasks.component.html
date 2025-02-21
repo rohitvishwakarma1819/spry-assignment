@@ -1,0 +1,6 @@
+<h2 class="completed-task-title">Completed Tasks</h2>
+<div class="task-grid">
+    <ng-container *ngIf="completedTasks$ | async as tasks">
+        <app-task-card *ngFor="let task of tasks" [task]="task"></app-task-card>
+    </ng-container>
+</div>

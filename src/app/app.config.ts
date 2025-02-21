@@ -3,7 +3,11 @@ import {
   importProvidersFrom,
   provideZoneChangeDetection,
 } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import {
+  provideRouter,
+  RouterModule,
+  withComponentInputBinding,
+} from '@angular/router';
 
 import { routes } from './app.routes';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
@@ -13,8 +17,13 @@ import { CommonModule } from '@angular/common';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes),
-    importProvidersFrom(ReactiveFormsModule, MatDialogModule, CommonModule),
+    provideRouter(routes, withComponentInputBinding()),
+    importProvidersFrom(
+      ReactiveFormsModule,
+      MatDialogModule,
+      CommonModule,
+      RouterModule
+    ),
     importProvidersFrom(FormBuilder),
   ],
 };

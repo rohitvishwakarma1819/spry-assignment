@@ -1,10 +1,17 @@
 <main class="content">
     <header>
-        <h1>Task Management Dashboard</h1>
+        <strong class="dashboard-title">Task Management Dashboard</strong>
+        <nav>
+            <a routerLink="/" routerLinkActive="active" class="nav-link" (click)="navigateTo('')"
+                [routerLinkActiveOptions]="{exact: true}">All
+                Tasks</a>
+            <a routerLink="/completed" routerLinkActive="active" class="nav-link"
+                (click)="navigateTo('completed')">Completed Tasks</a>
+        </nav>
     </header>
 
     <app-task-summary></app-task-summary>
 
-    <app-task-list></app-task-list>
+    <router-outlet></router-outlet>
 
 </main>

@@ -4,11 +4,42 @@
 
 header {
   background-color: pink;
-  justify-content: center;
+  justify-content: space-between;
   border: 1px solid #ccc;
-  padding: 0px;
+  padding: 10px;
   padding-left: 18px;
-  margin: 0px;
-  width: 100%;
+  align-items: center;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+
+  .dashboard-title {
+    font-size: 24px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+
+    .nav-link {
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 16px;
+      background: #5c8abd;
+      color: white;
+      transition: background 0.3s ease;
+      border-radius: 4px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    .nav-link:hover {
+      background: #2980b9;
+    }
+  }
+}
+
+.nav-link.active {
+  background: #2980b9 !important;
 }

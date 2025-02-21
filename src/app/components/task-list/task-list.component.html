@@ -24,7 +24,7 @@
     <div class="task-grid">
         <ng-container *ngIf="filteredTasks$ | async as tasks">
             <app-task-card *ngFor="let task of tasks" [task]="task" (delete)="deleteTask(task.id)"
-                (edit)="editTask(task)"></app-task-card>
+                (edit)="editTask(task)" [showActions]="true"></app-task-card>
         </ng-container>
     </div>
 </div>
