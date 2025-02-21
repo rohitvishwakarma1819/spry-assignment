@@ -42,4 +42,4 @@ Requirements:
 
 ## Demo video
 
-[Demo Video]()
+[Demo Video](https://github.com/rohitvishwakarma1819/spry-assignment/blob/main/Screen%20Recording%202025-02-21%20at%2011.38.22%E2%80%AFPM.mov)
