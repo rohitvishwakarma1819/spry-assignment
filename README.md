@@ -1,5 +1,7 @@
 # Spry assignment
 
+[Live app](https://spry-assignment-two.vercel.app/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19
 
 ## Description and features
