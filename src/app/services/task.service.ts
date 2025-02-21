@@ -20,6 +20,7 @@ export class TaskService {
     task.id = Date.now().toString();
     this.tasks.push(task);
     this.updateTasks();
+    return task;
   }
 
   editTask(updatedTask: Task) {
