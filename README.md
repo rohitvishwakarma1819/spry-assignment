@@ -1,59 +1,45 @@
-# SpryAssignment
+# Spry assignment
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19
 
-## Development server
+## Description and features
 
-To start a local development server, run:
+Problem statement: The task was to build a simple Task Management Dashboard where users can view,
+add, edit, and delete tasks.
+Requirements:
 
-```bash
-ng serve
-```
+1. Display a list of tasks with properties: title, description, status (Pending, In Progress, Completed), and dueDate.
+2. Allow users to add, edit delete task.
+3. Filter task by status.
+4. Sort task.
+5. Provide a summary at the top of the dashboard showing the count of tasks in each status.
+6. Use a responsive layout (grid or list view) with a modern UI.
+7. Include a modal or a form component for adding and editing tasks.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Tech-Specific Requirements:
 
-## Code scaffolding
+1. Use state management (e.g., Context API, Redux, or RxJS for Angular).
+2. Implement reusable components (e.g., a TaskCard and TaskForm).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Additional Challenges:
 
-```bash
-ng generate component component-name
-```
+1. Add client-side routing: Navigate between “All Tasks” and “Completed Tasks” views.
+2. Persist tasks using local storage or a mock API.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Pre-requisites
 
-```bash
-ng generate --help
-```
+1. You must have node in your system.
+2. You must have nvm(node version manager) installed.
+   We are using node version 20.0.0.
+   After installing nvm, you can type `nvm install 20` to install this version
+   Then type `nvm use 20`
 
-## Building
+## Steps to run the application
 
-To build the project run:
+1. Run `npm install` in terminal
+2. Now run `npm start` in terminal
+3. After successful, compilation, go to http://localhost:4200
 
-```bash
-ng build
-```
+## Demo video
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[Demo Video]()
