@@ -1,7 +1,18 @@
 {
-  "sampleData": "This is sample data",
-  "items": [
-    {"id": 1, "name": "Item 1"},
-    {"id": 2, "name": "Item 2"}
+  "keys": [
+    {
+      "kty": "RSA",
+      "kid": "myapp-key",
+      "use": "sig",
+      "alg": "RS256",
+      "n": "jd53Vkq7BUDPqvqP4cMcyDkcGnUVMKliTxp1TmahnToReS0UHKxVL3m7efznOUOpa0b-J-2Yc1F67hk2S2vZjfDSqtWhhJ-m6wXuYa1VohkCqPJB-DZLPLV2630Z_V--zG-KmmLfTj2HcNZEX-FHTNBiig9wTymxG_R7wFWd736Sp-ELozlVgnTyVhu8gFLv5dFbIsdVn5esNGRZ0EQk0rKgtkQZ9e2aoGxWiVJyhG4T0BBzMSRvQ0ycd6XYjCuAh8p1RW0998E997yaHsRH8g3qnT173fvOKJb0EdHcBuyC6FM0aPg2OuhNwnS_ds4u2Q1qkV-AGJ-oMTp30M7YjQ",
+      "e": "AQAB",
+      "d": "P4GbmCRBzdsyWw5oxB4MT1DJVMqenrbkTBbC9kKZDAHHeqAERcWbKHJsyvG8K_Uu7NfNw9_nA5Aw4E6m8GIp9BEerNyOvgidts1j5ZOrJrHdb_VqNItRaK6uukG5FaP7jBZOTEgAQEzoyUkROH5m5WrPAZBhrP4zyxjJINLyrRcoOkEWPGh-eSCmNaMUPdMAPkHdRkMcNYyYSQWp084Ph4onFOaJjA3h_zAZyw9ciKfMSIiI_hJ3iUJvKcSvWLO30oKJj_KVOXVlUs74amYUOQjwrDHcrdioBlA5tAUP-S3-jR4lxpiqYB0HZJoIpqzjhQRrz6syX1mbXKm8yAJIXQ",
+      "p": "AMFF6t0LJVLgCd5Yy4G74kKWmz1MNP7V7G5Fx-MOa0dtw9kOpMQxH8Zp_I2oHtzWkNtyNAeBrwF7uuXvrsYX4zzUR4NbLNudwXJ53aHtC26fInvetS4yDXxlEBXlh34J2eR7HyHFCN6HeGFvCvT4BZ6LySwrAE3tNaKNAByEgMyH",
+      "q": "ALvppG5Mse3Vo9ASNcgUeX1mgmVtOc7LDt7Ehndsz7v8NmzXR4c9tdKh8T8ZwSlsB-r9G1B7Bx2ofJ4-j9Kplwf38GfT5M0o38WOXGOTTXn_g22DQDVzRNcyMuVKm3fk_R6xFkYZ1J1SAX9kMt2_bBurIndYnow11VkNf-9x1etL",
+      "dp": "WcsSAwBaptZPv22hnvSbejRei2wMcxkQb2scIvFgBh-JDh8vjbcE_DnhjC6_p_pH8qxsX9Bwbk_91TY2DPKsMGavkueZP69bYMQdpE1tMkfczY_6vSuj-Fc70fCBsp0BDpXlMNtJ85kc5Keif417jt2C6XJRAeNjN9IqaxVkgaE",
+      "dq": "ALll54m7ucFCC4F6tf1V1hfXT8fqYCKbTWyU0WZ6wOpkCP6R2EyiogXTKUZsjpvjrlw2pQBeocKtPWaTqyrZj92YzmRiN1gDf-RWdOj5qHM5md4upOcXd1AqgvSfC4zbLLFfXu6DBbbB9iBOJ7GI74zM6BCAKs2DP5_BJfyEf97J7w",
+      "qi": "CFyxi1cw1Z3Odubk0dbgoCgFBpEdx1O0dgIf2WXGYAZu7LXKXrXtJ83vgbeMnmWvA2stFArK1-cRfhzvFE5BHIm25TY8lSiZNkftJoLsEubgSkC4x6tkaJyYealiWehErmOACur7TsR-oFU9ETFqv7tuQvnWaRSQwalH5JiwbvI"
+    }
   ]
 }
